@@ -47,7 +47,11 @@ body {
   margin-top: 100px;
   position: relative;
 }
-
+.barre-marron {
+  background-color: #5c4033;
+  height: 134px;
+  width: 100%;
+  }
 .image-accueil {
   width: 100%;
   height: auto;
@@ -294,6 +298,7 @@ body {
     height: 25px;
   }
 }
+
 
 
 
