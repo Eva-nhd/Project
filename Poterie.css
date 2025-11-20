@@ -122,26 +122,6 @@ body {
   border-radius: 6px;
 }
 
-/* ======== A PROPOS ======== */
-.apropos {
-  text-align: center;
-  color: #5c4033;
-  font-family: 'Lora', serif;
-  padding: 80px 40px;
-}
-
-.apropos h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.apropos .gris {
-  color: rgba(92, 64, 51, 0.55);
-  max-width: 700px;
-  margin: 10px auto;
-  line-height: 1.6;
-}
-
 /* ======== CONTACTS ======== */
 .contacts-page {
   background-color: #5c4033;
@@ -181,98 +161,6 @@ body {
   color: #fff8e7;
   text-decoration: underline;
 }
-
-/* ==== FORMULAIRE ==== */
-.formulaire {
-  background-color: #d16c4f;
-  padding: 80px 0;
-  font-family: 'Lora', serif;
-  color: #fff8e7;
-  text-align: center;
-}
-
-.titre-formulaire {
-  font-size: 26px;
-  font-weight: 600;
-  margin-bottom: 30px;
-  color: #fff8e7;
-}
-
-.formulaire-container {
-  max-width: 900px;
-  margin: 0 auto;
-  background-color: #d16c4f;
-  padding: 40px 60px;
-  position: relative;
-}
-
-.formulaire-contact {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  align-items: flex-start;
-}
-
-.formulaire-contact label {
-  font-size: 20px;
-  color: #fff8e7;
-  font-weight: 400;
-}
-
-.formulaire-contact input,
-.formulaire-contact textarea {
-  width: 100%;
-  background-color: #c1b1a1;
-  border: none;
-  border-radius: 3px;
-  padding: 10px;
-  font-size: 18px;
-  color: #5c4033;
-  outline: none;
-}
-
-.champ-obligatoire {
-  font-size: 14px;
-  font-weight: 600;
-  color: #5c4033;
-  margin-top: 10px;
-}
-
-.bouton-envoyer {
-  background-color: #5c4033;
-  color: #fff8e7;
-  border: none;
-  font-size: 20px;
-  padding: 12px 60px;
-  font-weight: 600;
-  cursor: pointer;
-  align-self: center;
-  transition: background 0.3s ease;
-  margin-top: 20px;
-}
-
-.bouton-envoyer:hover {
-  background-color: #4a3528;
-}
-
-/* === Adaptation mobile === */
-@media (max-width: 768px) {
-  .formulaire-container {
-    padding: 20px;
-  }
-  .formulaire-contact label {
-    font-size: 14px;
-  }
-  .formulaire-contact input,
-  .formulaire-contact textarea {
-    font-size: 14px;
-  }
-  .bouton-envoyer {
-    font-size: 16px;
-    padding: 10px 40px;
-  }
-}
-
 
 /* ======== RESPONSIVE ======== */
 @media (max-width: 900px) {
