@@ -24,6 +24,7 @@ body {
   align-items: center;
   padding: 0 60px;
   z-index: 1000;
+  margin-left: 20px;
 }
 .menu-logo {
   width: 180px;
@@ -294,4 +295,5 @@ body {
     height: 25px;
   }
 }
+
 
