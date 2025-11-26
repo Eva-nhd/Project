@@ -182,122 +182,6 @@ body {
   text-decoration: underline;
 }
 
-/* ==== FORMULAIRE ==== */
-.formulaire {
-  background-color: #d16c4f;
-  padding: 80px 0;
-  font-family: 'Lora', serif;
-  color: #fff8e7;
-  text-align: center;
-}
-
-.titre-formulaire {
-  font-size: 26px;
-  font-weight: 600;
-  margin-bottom: 30px;
-  color: #fff8e7;
-}
-
-.formulaire-container {
-  max-width: 900px;
-  margin: 0 auto;
-  background-color: #d16c4f;
-  padding: 40px 60px;
-  position: relative;
-}
-
-.formulaire-contact {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  align-items: flex-start;
-}
-
-.formulaire-contact label {
-  font-size: 20px;
-  color: #fff8e7;
-  font-weight: 400;
-}
-
-.formulaire-contact input,
-.formulaire-contact textarea {
-  width: 100%;
-  background-color: #c1b1a1;
-  border: none;
-  border-radius: 3px;
-  padding: 10px;
-  font-size: 18px;
-  color: #5c4033;
-  outline: none;
-}
-
-.champ-obligatoire {
-  font-size: 14px;
-  font-weight: 600;
-  color: #5c4033;
-  margin-top: 10px;
-}
-
-.bouton-envoyer {
-  background-color: #5c4033;
-  color: #fff8e7;
-  border: none;
-  font-size: 20px;
-  padding: 12px 60px;
-  font-weight: 600;
-  cursor: pointer;
-  align-self: center;
-  transition: background 0.3s ease;
-  margin-top: 20px;
-}
-
-.bouton-envoyer:hover {
-  background-color: #4a3528;
-}
-
-/* === Adaptation mobile === */
-@media (max-width: 768px) {
-  .formulaire-container {
-    padding: 20px;
-  }
-  .formulaire-contact label {
-    font-size: 14px;
-  }
-  .formulaire-contact input,
-  .formulaire-contact textarea {
-    font-size: 14px;
-  }
-  .bouton-envoyer {
-    font-size: 16px;
-    padding: 10px 40px;
-  }
-}
-
-
-/* ======== RESPONSIVE ======== */
-@media (max-width: 900px) {
-  .menu {
-    flex-direction: column;
-    height: auto;
-    padding: 20px;
-  }
-  .menu-nav {
-    flex-direction: column;
-    gap: 10px;
-  }
-  .images-haut, .images-bas {
-    flex-direction: column;
-    align-items: center;
-  }
-  .text-row {
-    flex-direction: column;
-    align-items: center;
-  }
-  .icones img {
-    width: 25px;
-    height: 25px;
-  }
-}
 /* -------- SECTION FORMULAIRE -------- */
 
 .contact-section {
@@ -309,7 +193,7 @@ body {
 .contact-form-container {
     max-width: 700px;
     margin: 0 auto;
-    background: #cf5332; /* Orange */
+    background: #cf5332;      /* ORANGE */
     padding: 40px;
     border-radius: 4px;
 }
@@ -396,10 +280,16 @@ body {
     font-size: 14px;
 }
 
-/* LOGO FOOTER */
-.footer-logo {
-    width: 120px;
-    margin-bottom: 15px;
+.logo-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    margin: 0 auto 10px;
 }
 
 .social-icons i {
@@ -432,6 +322,8 @@ body {
         width: 100%;
     }
 }
+
+
 
 
 
