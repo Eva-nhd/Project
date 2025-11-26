@@ -26,9 +26,8 @@ body {
   z-index: 1000;
 }
 .menu-logo {
-  max-width: 150px;
-  width: 150px;
-  height: auto;
+  width: auto;
+  height: 90%;
 }
 .menu-nav {
   display: flex;
@@ -356,6 +355,7 @@ body {
   .submit-btn-container button{ padding: 9px 18px; font-size: 14px; }
   .required-info{ font-size: 12px; left: 16px; bottom: 12px; }
 }
+
 
 
 
