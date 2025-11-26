@@ -298,6 +298,141 @@ body {
     height: 25px;
   }
 }
+/* -------- SECTION FORMULAIRE -------- */
+
+.contact-section {
+    text-align: center;
+    margin: 40px 0;
+    font-family: "Georgia", serif;
+}
+
+.contact-form-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #cf5332; /* Orange */
+    padding: 40px;
+    border-radius: 4px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+}
+
+.form-group label {
+    width: 120px;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+    background: #f2f2f2;
+}
+
+.form-group textarea {
+    height: 120px;
+    resize: none;
+}
+
+.required-info {
+    font-size: 13px;
+    color: white;
+    text-align: left;
+}
+
+.submit-btn-container {
+    text-align: right;
+}
+
+.submit-btn-container button {
+    background: #2c2c2c;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* -------- FOOTER -------- */
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background: #3a2a25;
+    color: white;
+    padding: 40px 20px;
+    font-family: "Georgia", serif;
+}
+
+.footer-column {
+    width: 25%;
+    font-size: 14px;
+}
+
+.footer-column a {
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.footer-center {
+    text-align: center;
+    width: 30%;
+    font-size: 14px;
+}
+
+/* LOGO FOOTER */
+.footer-logo {
+    width: 120px;
+    margin-bottom: 15px;
+}
+
+.social-icons i {
+    font-size: 22px;
+    margin: 10px 8px;
+    cursor: pointer;
+}
+
+
+/* -------- RESPONSIVE -------- */
+
+@media (max-width: 700px) {
+    .form-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-group label {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer-column, .footer-center {
+        width: 100%;
+    }
+}
+
 
 
 
