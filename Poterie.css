@@ -22,7 +22,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 30px;
+  padding: 0 60px;
   z-index: 1000;
 }
 .menu-logo {
@@ -31,7 +31,7 @@ body {
 }
 .menu-nav {
   display: flex;
-  gap: 40px;
+  gap: 28px;
 }
 .menu-nav a {
   color: #fff8e7;
@@ -358,4 +358,5 @@ body {
   .submit-btn-container button{ padding: 9px 18px; font-size: 14px; }
   .required-info{ font-size: 12px; left: 16px; bottom: 12px; }
 }
+
 
