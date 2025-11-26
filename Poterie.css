@@ -182,146 +182,163 @@ body {
   text-decoration: underline;
 }
 
-/* -------- SECTION FORMULAIRE -------- */
+/* ===================================== */
+/*         FORMULAIRE CONTACT            */
+/* ===================================== */
 
 .contact-section {
     text-align: center;
     margin: 40px 0;
-    font-family: "Georgia", serif;
+    font-family: serif;
 }
 
 .contact-form-container {
-    max-width: 700px;
-    margin: 0 auto;
-    background: #cf5332;      /* ORANGE */
-    padding: 40px;
-    border-radius: 4px;
+    width: 700px;
+    max-width: 90%;
+    margin: auto;
+    background: #c44f31;   /* couleur proche du orange de ta photo */
+    padding: 40px 50px 60px 50px;
+    position: relative;
 }
 
 .contact-form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
 }
 
-.form-group {
+/* Disposition en 2 colonnes : Label + Input */
+.form-row {
     display: flex;
     align-items: center;
 }
 
-.form-group label {
-    width: 120px;
-    text-align: left;
+.form-row label {
+    width: 140px;
     color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.form-row input,
+.form-row textarea {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background: #f2f2f2;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+/* Texte "Champs obligatoires" */
+.required-info {
+    color: white;
+    font-size: 13px;
+    margin-top: -10px;
+}
+
+/* Bouton aligné à droite dans le bloc orange */
+.submit-btn-container {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.submit-btn-container button {
+    background: #2b2b2b;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
     font-weight: bold;
     font-size: 15px;
 }
 
-.form-group input,
-.form-group textarea {
-    flex: 1;
-    padding: 8px;
-    border: none;
-    border-radius: 3px;
-    background: #f2f2f2;
-}
-
-.form-group textarea {
-    height: 120px;
-    resize: none;
-}
-
-.required-info {
-    font-size: 13px;
-    color: white;
-    text-align: left;
-}
-
-.submit-btn-container {
-    text-align: right;
-}
-
-.submit-btn-container button {
-    background: #2c2c2c;
-    color: white;
-    border: none;
-    padding: 10px 25px;
-    font-weight: bold;
-    cursor: pointer;
-}
 
 
-/* -------- FOOTER -------- */
+/* ===================================== */
+/*                FOOTER                 */
+/* ===================================== */
 
 .footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
     background: #3a2a25;
     color: white;
-    padding: 40px 20px;
-    font-family: "Georgia", serif;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 50px;
+    font-family: serif;
 }
 
+/* 3 colonnes */
 .footer-column {
-    width: 25%;
-    font-size: 14px;
-}
-
-.footer-column a {
-    color: white;
-    font-size: 13px;
-    text-decoration: none;
-}
-
-.footer-center {
-    text-align: center;
     width: 30%;
     font-size: 14px;
 }
 
-.logo-circle {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    border: 2px solid white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 22px;
-    margin: 0 auto 10px;
+/* colonne centrale */
+.footer-center {
+    text-align: center;
+    width: 40%;
 }
 
+/* logo centré */
+.footer-logo {
+    width: 110px;
+    margin-bottom: 10px;
+}
+
+/* Liens légaux */
+.footer-column a {
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Réseaux sociaux */
 .social-icons i {
     font-size: 22px;
-    margin: 10px 8px;
-    cursor: pointer;
+    margin: 0 8px;
 }
 
 
-/* -------- RESPONSIVE -------- */
 
-@media (max-width: 700px) {
-    .form-group {
+
+/* ===================================== */
+/*              RESPONSIVE               */
+/* ===================================== */
+
+@media (max-width: 768px) {
+
+    /* Formulaire mobile */
+    .form-row {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .form-group label {
-        width: 100%;
+    .form-row label {
         margin-bottom: 5px;
     }
 
+    /* Footer mobile */
     .footer {
         flex-direction: column;
         text-align: center;
         gap: 30px;
     }
 
-    .footer-column, .footer-center {
+    .footer-column,
+    .footer-center {
         width: 100%;
     }
 }
+
+
 
 
 
