@@ -260,89 +260,138 @@ textarea {
 
 
 
-/* ===================================== */
-/*                FOOTER                 */
-/* ===================================== */
+/* ---------- FOOTER RÉVISÉ ---------- */
 
-.footer {
-    background: #3a2a25;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    padding: 40px 50px;
-    font-family: serif;
+.site-footer {
+  background: #3a2a25; /* fond marron foncé */
+  color: #efe7e2;
+  font-family: "Georgia", serif;
 }
 
-/* 3 colonnes */
-.footer-column {
-    width: 30%;
-    font-size: 14px;
+/* wrapper central pour contrôler largeur et centrage */
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 28px; /* espace en haut/bas et latéral */
+  display: grid;
+  grid-template-columns: 1fr 420px 1fr; /* gauche - centre - droite */
+  gap: 20px;
+  align-items: stretch; /* on contrôle verticalement avec inner-center */
+  box-sizing: border-box;
 }
 
-/* colonne centrale */
+/* Colonne gauche : alignée en haut */
+.footer-left {
+  text-align: left;
+  align-self: start; /* s'accroche en haut */
+  font-size: 14px;
+  line-height: 1.7;
+  padding: 0 12px;
+}
+.footer-left h4 {
+  margin: 0 0 8px 0;
+  font-size: 15px;
+  letter-spacing: 0.6px;
+}
+
+/* Colonne droite : alignée en haut */
+.footer-right {
+  text-align: right;
+  align-self: start; /* s'accroche en haut */
+  padding: 0 12px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+.footer-right .legal-links a {
+  display: block;
+  color: #efe7e2;
+  text-decoration: none;
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 13px;
+}
+.footer-right .copyright {
+  color: #d9cfc9;
+  margin: 12px 0;
+  font-size: 12px;
+}
+.footer-right .by {
+  color: #efe7e2;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+/* Colonne centrale : contenu strictement centré verticalement et horizontalement */
 .footer-center {
-    text-align: center;
-    width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* CENTRER verticalement */
+  padding: 0 12px;
 }
 
-/* logo centré */
+/* inner pour regrouper logo + texte et pouvoir ajuster l'espacement */
+.footer-center-inner {
+  text-align: center;
+  max-width: 340px;
+}
+
+/* logo - taille adaptée */
 .footer-logo {
-    width: 110px;
-    margin-bottom: 10px;
+  width: 110px; /* ajuste si besoin */
+  height: auto;
+  display: block;
+  margin: 0 auto 14px auto;
 }
 
-/* Liens légaux */
-.footer-column a {
-    color: white;
-    font-size: 13px;
-    text-decoration: none;
-    display: block;
-    margin-bottom: 8px;
+/* texte du centre */
+.center-contact {
+  color: #efe7e2;
+  font-size: 13px;
+  line-height: 1.5;
+  font-weight: 500;
 }
 
-/* Réseaux sociaux */
-.social-icons i {
-    font-size: 22px;
-    margin: 0 8px;
+/* petit réglage pour la séparation visuelle : bande claire sous le footer (optionnel) */
+.site-footer::after {
+  content: "";
+  display: block;
+  height: 14px;
+  background: #b58272; /* bande plus claire (ajuste la couleur si tu veux) */
+  width: 100%;
+  margin-top: 8px;
 }
 
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 980px) {
+  .footer-inner {
+    grid-template-columns: 1fr; /* stack en une colonne sur tablettes/phones */
+    text-align: center;
+    padding: 34px 18px;
+    gap: 28px;
+  }
 
+  .footer-left,
+  .footer-right {
+    align-self: center;
+    text-align: center;
+    padding: 0;
+  }
 
+  .footer-right {
+    order: 3;
+  }
 
-/* ===================================== */
-/*              RESPONSIVE               */
-/* ===================================== */
-
-@media (max-width: 768px) {
-
-    /* Formulaire mobile */
-    .form-row {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .form-row label {
-        margin-bottom: 5px;
-    }
-
-    /* Footer mobile */
-    .footer {
-        flex-direction: column;
-        text-align: center;
-        gap: 30px;
-    }
-
-    .footer-column,
-    .footer-center {
-        width: 100%;
-    }
+  .footer-center {
+    order: 2;
+  }
+  /* réduire logo sur petits écrans */
+  .footer-logo { width: 90px; margin-bottom: 10px; }
 }
 
-
-
-
-
-
-
-
+/* très petit écran */
+@media (max-width: 420px) {
+  .footer-inner { padding: 24px 12px; gap: 20px; }
+  .footer-logo { width: 78px; }
+  .center-contact, .footer-left, .footer-right { font-size: 13px; }
+}
 
