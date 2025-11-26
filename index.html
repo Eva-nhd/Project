@@ -120,83 +120,105 @@
     </div>
 
 <!-- ======== FORMULAIRE ======== -->
-<!-- SECTION FORMULAIRE -->
+<!-- ========================== -->
+<!--      FORMULAIRE CONTACT    -->
+<!-- ========================== -->
+
 <section class="contact-section">
     <h3>— Parlons-en ! N’hésitez pas à nous poser vos questions</h3>
 
     <div class="contact-form-container">
+
         <form class="contact-form">
-            <div class="form-group">
+
+            <!-- Ligne Nom -->
+            <div class="form-row">
                 <label for="nom">Nom*</label>
                 <input type="text" id="nom" required>
             </div>
 
-            <div class="form-group">
+            <!-- Ligne Courriel -->
+            <div class="form-row">
                 <label for="email">Courriel*</label>
                 <input type="email" id="email" required>
             </div>
 
-            <div class="form-group">
+            <!-- Ligne Téléphone -->
+            <div class="form-row">
                 <label for="telephone">Téléphone</label>
                 <input type="text" id="telephone">
             </div>
 
-            <div class="form-group">
+            <!-- Ligne Message -->
+            <div class="form-row">
                 <label for="message">Message</label>
                 <textarea id="message"></textarea>
             </div>
 
+            <!-- Petit texte -->
             <p class="required-info">*Champs obligatoires</p>
 
+            <!-- Bouton -->
             <div class="submit-btn-container">
                 <button type="submit">Envoyer</button>
             </div>
+
         </form>
+
     </div>
 </section>
 
 
-<footer class="site-footer">
-  <div class="footer-inner">
 
-    <!-- Colonne gauche : disponibilités -->
-    <div class="footer-left">
-      <h4>DISPONIBILITÉS</h4>
-      <p>
-        Ouvert du lundi au samedi<br>
-        De 9h à 17h30<br>
-        Fermé le dimanche
-      </p>
+<!-- ========================== -->
+<!--           FOOTER           -->
+<!-- ========================== -->
+
+<footer class="footer">
+
+    <!-- Colonne gauche -->
+    <div class="footer-column">
+        <h4>DISPONIBILITÉS</h4>
+        <p>
+            Ouvert du lundi au samedi<br>
+            De 9h à 17h30<br>
+            Fermé le dimanche
+        </p>
     </div>
 
-    <!-- Colonne centre : logo + contact (centrés verticalement) -->
+    <!-- Centre avec logo -->
     <div class="footer-center">
-      <div class="footer-center-inner">
-        <img src="images/logo.png" alt="Doigts d'Argile" class="footer-logo">
-        <div class="center-contact">
-          <strong>DOIGTS D'ARGILE</strong><br>
-          10 rue de la république 75000 Paris<br>
-          01 63 45 85 56<br>
-          01 63 45 78 52<br>
-          Argile@gmail.com
+
+        <img src="images/logo.png" class="footer-logo" alt="Doigts d’Argile">
+
+        <p>
+            DOIGTS D’ARGILE<br>
+            10 rue de la république 75000 Paris<br>
+            01 63 45 85 56<br>
+            01 63 45 78 52<br>
+            Argile@gmail.com
+        </p>
+
+        <div class="social-icons">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-pinterest"></i>
         </div>
-      </div>
+
     </div>
 
-    <!-- Colonne droite : liens légaux -->
-    <div class="footer-right">
-      <nav class="legal-links">
+    <!-- Colonne droite -->
+    <div class="footer-column">
         <a href="#">PRIVACY POLICY</a>
         <a href="#">MANAGE COOKIES</a>
-        <a href="#">TERMS &amp; CONDITIONS</a>
-      </nav>
+        <a href="#">TERMS & CONDITIONS</a>
 
-      <p class="copyright">
-        COPYRIGHT © 2025 DA | DOIGTS D'ARGILE
-      </p>
+        <p style="margin-top: 10px; font-size: 13px;">
+            COPYRIGHT © 2025 DA | DOIGTS D’ARGILE
+        </p>
 
-      <a class="by" href="#">SITE BY ARTOLOGIC</a>
+        <a href="#">SITE BY ARTOLOGIC</a>
     </div>
 
-  </div>
 </footer>
