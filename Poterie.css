@@ -32,6 +32,7 @@ body {
 .menu-nav {
   display: flex;
   gap: 24px;
+  flex-wrap: wrap;
 }
 .menu-nav a {
   color: #fff8e7;
@@ -358,6 +359,7 @@ body {
   .submit-btn-container button{ padding: 9px 18px; font-size: 14px; }
   .required-info{ font-size: 12px; left: 16px; bottom: 12px; }
 }
+
 
 
 
