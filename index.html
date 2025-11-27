@@ -149,43 +149,32 @@
     <div class="logo"></div>
   </section>
 
-  <!-- FORMULAIRE CONTACT -->
-  <section class="contact-section">
+  <section class="formulaire-section">
 
-    <h3>— Parlons-en ! N’hésitez pas à nous poser vos questions</h3>
+    <h2 class="form-title">Parlons-en ! N’hésitez pas à nous poser vos questions</h2>
 
-    <div class="contact-form-container">
+    <div class="form-container">
+        <form class="contact-form">
 
-      <form class="contact-form">
+            <label for="nom">Nom*</label>
+            <input type="text" id="nom" required>
 
-        <div class="form-row">
-          <label for="nom">Nom*</label>
-          <input type="text" id="nom" required>
-        </div>
+            <label for="courriel">Courriel*</label>
+            <input type="email" id="courriel" required>
 
-        <div class="form-row">
-          <label for="email">Courriel*</label>
-          <input type="email" id="email" required>
-        </div>
+            <label for="telephone">Téléphone</label>
+            <input type="text" id="telephone">
 
-        <div class="form-row">
-          <label for="telephone">Téléphone</label>
-          <input type="text" id="telephone">
-        </div>
+            <label for="message">Message</label>
+            <textarea id="message" rows="6"></textarea>
 
-        <div class="form-row">
-          <label for="message">Message</label>
-          <textarea id="message"></textarea>
-        </div>
+            <button type="submit" class="form-btn">Envoyer</button>
 
-        <p class="required-info">*Champs obligatoires</p>
-
-        <div class="submit-btn-container">
-          <button type="submit">Envoyer</button>
-        </div>
-
-      </form>
+            <p class="required-text">*Champs obligatoires</p>
+        </form>
     </div>
+
+</section>
 
   </section>
 
@@ -240,5 +229,6 @@
 
 </body>
 </html>
+
 
 
