@@ -66,43 +66,6 @@ body {
   height: 1px;
   background-color: #5c4033;
   margin: 0 auto 60px;
-}
-.images-haut, .images-bas {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  flex-wrap: wrap;
-}
-.images-haut img, .images-bas img {
-  width: 320px;
-  height: 240px;
-  object-fit: cover;
-  border-radius: 4px;
-}
-.text-row {
-  display: flex;
-  justify-content: center;
-  gap: 48px;
-  list-style: none;
-  padding: 80px 64px;
-  margin: 0;
-  flex-wrap: wrap;
-}
-.text-row li {
-  flex: 1;
-  min-width: 300px;
-  border-top: 1px solid rgba(0, 0, 0, 0.15);
-  padding-top: 24px;
-}
-.text-row h5 {
-  font-size: 22px;
-  margin-bottom: 10px;
-}
-.text-row p {
-  font-size: 16px;
-  color: rgba(92, 64, 51, 0.55);
-  line-height: 1.5;
-}
 
 /* ======== ÉVÉNEMENTS ======== */
 .evenements h2 {
@@ -328,6 +291,37 @@ body {
   width: 100%;
   margin-top: 8px;
 }
+/* ============= EXPOSITION  ============= */
+.expo-row {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 70px;
+}
+
+.expo-item {
+  width: 320px;
+  text-align: left;
+}
+
+.expo-item img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.expo-item h5 {
+  margin-top: 20px;
+  font-size: 22px;
+}
+
+.expo-item p {
+  font-size: 16px;
+  color: rgba(92, 64, 51, 0.55);
+  line-height: 1.5;
+}
 
 /* ============= RESPONSIVE ============= */
 @media (max-width: 980px)
@@ -355,6 +349,7 @@ body {
   .submit-btn-container button{ padding: 9px 18px; font-size: 14px; }
   .required-info{ font-size: 12px; left: 16px; bottom: 12px; }
 }
+
 
 
 
