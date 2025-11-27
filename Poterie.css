@@ -200,14 +200,14 @@ body {
 .form-title {
     font-size: 18px;
     margin-bottom: 25px;
-    color: #000;
+    color: #5C4033;
 }
 
 /* Bloc orange */
 .form-container {
     width: 70%;
     margin: 0 auto;
-    background-color: #C24E2C; /* couleur exacte du PDF */
+    background-color: #C24E2C; 
     padding: 40px 60px;
     box-sizing: border-box;
 }
@@ -221,9 +221,9 @@ body {
 
 .contact-form label {
     text-align: left;
-    font-size: 15px;
-    margin-bottom: 6px;
-    margin-top: 8px;
+    font-size: 17px;
+    margin-bottom: 8px;
+    margin-top: 6px;
 }
 
 .contact-form input,
@@ -273,7 +273,7 @@ body {
 
 .footer h3 {
     font-size: 17px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .footer-logo {
@@ -297,7 +297,7 @@ body {
     display: block;
     color: #FFF8E7;
     text-decoration: none;
-    margin-bottom: 9px;
+    margin-bottom: 15px;
 }
 
 .footer-right p {
@@ -330,6 +330,7 @@ body {
   .submit-btn-container button{ padding: 9px 18px; font-size: 14px; }
   .required-info{ font-size: 12px; left: 16px; bottom: 12px; }
 }
+
 
 
 
