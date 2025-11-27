@@ -52,10 +52,13 @@ body {
 }
 
 .hamburger {
-  display: none; 
+  display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 22px;
   cursor: pointer;
-  gap: 5px;
+  margin-left: auto; /* pousse l'icône à droite */
 }
 
 .hamburger span {
@@ -388,6 +391,7 @@ body {
   .submit-btn-container button{ padding: 9px 18px; font-size: 14px; }
   .required-info{ font-size: 12px; left: 16px; bottom: 12px; }
 }
+
 
 
 
