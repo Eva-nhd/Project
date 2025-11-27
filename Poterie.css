@@ -297,11 +297,11 @@ body {
     display: block;
     color: white;
     text-decoration: none;
-    margin-bottom: 8px;
+    margin-bottom: 9px;
 }
 
 .footer-right p {
-    margin: 10px 0;
+    margin: 9px 0;
 }
 
 /* ============= RESPONSIVE ============= */
@@ -330,6 +330,7 @@ body {
   .submit-btn-container button{ padding: 9px 18px; font-size: 14px; }
   .required-info{ font-size: 12px; left: 16px; bottom: 12px; }
 }
+
 
 
 
