@@ -229,7 +229,7 @@ body {
 .contact-form input,
 .contact-form textarea {
     width: 100%;
-    background-color: #D9D9D9;
+    background-color: #C1B1A1;
     border: none;
     padding: 12px;
     font-size: 15px;
@@ -330,6 +330,7 @@ body {
   .submit-btn-container button{ padding: 9px 18px; font-size: 14px; }
   .required-info{ font-size: 12px; left: 16px; bottom: 12px; }
 }
+
 
 
 
