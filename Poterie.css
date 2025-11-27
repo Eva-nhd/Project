@@ -189,81 +189,70 @@ body {
   --font: "Georgia", serif;
 }
 
-/* ============= FORMULAIRE ============= */
-.contact-section { text-align: center; font-family: var(--font); color: #222; margin: 40px 0; }
+/* ---------- SECTION FORMULAIRE ---------- */
 
-.contact-form-container{
-  width: 100%;
-  max-width: var(--max-form-w);
-  margin: 0 auto;
-  background: var(--orange);
-  padding: 36px 40px 80px 40px; 
-  position: relative; 
-  box-sizing: border-box;
-  border-radius: 2px;
+.formulaire-section {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
 }
 
-
-.contact-form{
-  display: grid;
-  grid-template-columns: var(--label-w) 1fr;
-  grid-column-gap: 28px;
-  grid-row-gap: 18px;
-  align-items: center;
+.form-title {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #000;
 }
 
-
-.form-row { display: contents; } 
-
-
-.contact-form label{
-  justify-self: start;
-  align-self: center;
-  color: #fff;
-  font-size: 15px;
-  font-weight: 600;
-}
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form input[type="tel"],
-.contact-form textarea{
-  width: 100%;
-  padding: 10px 12px;
-  border: none;
-  border-radius: 2px;
-  background: var(--light);
-  font-family: inherit;
-  font-size: 14px;
-  color: #222;
-  box-sizing: border-box;
-  outline: none;
-}
-.contact-form textarea { min-height: 150px; resize: vertical; }
-.required-info{
-  position: absolute;
-  left: 40px;        
-  bottom: 18px;
-  color: rgba(255,255,255,0.95);
-  font-size: 13px;
-}
-.submit-btn-container{
-  position: absolute;
-  right: 40px;      
-  bottom: 18px;
-}
-.submit-btn-container button{
-  background: var(--dark);
-  color: #fff;
-  border: none;
-  padding: 10px 26px;
-  font-weight: 700;
-  font-size: 15px;
-  cursor: pointer;
-  border-radius: 2px;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.18) inset;
-  font-family: var(--font);
+/* Bloc orange */
+.form-container {
+    width: 70%;
+    margin: 0 auto;
+    background-color: #C24E2C; /* couleur exacte du PDF */
+    padding: 40px 60px;
+    box-sizing: border-box;
 }
 
+/* Formulaire */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.contact-form label {
+    text-align: left;
+    font-size: 15px;
+    margin-bottom: 6px;
+    margin-top: 8px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    background-color: #D9D9D9;
+    border: none;
+    padding: 12px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+/* Bouton Envoyer */
+.form-btn {
+    align-self: flex-end;
+    padding: 12px 40px;
+    background-color: #1E1E1E;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.required-text {
+    margin-top: 8px;
+    font-size: 12px;
+    color: white;
+}
 /* ============= FOOTER ============= */
 .site-footer {
   background: var(--brown);
@@ -355,3 +344,4 @@ body {
   .submit-btn-container button{ padding: 9px 18px; font-size: 14px; }
   .required-info{ font-size: 12px; left: 16px; bottom: 12px; }
 }
+
