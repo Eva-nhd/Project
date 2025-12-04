@@ -20,7 +20,7 @@ body {
   background-color: #5c4033;
   color: #fff8e7;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 0 35px;
   z-index: 1000;
@@ -169,7 +169,7 @@ body {
 .apropos {
   text-align: center;
   color: #5c4033;
-  font-family: 'Lora', serif;
+  font-family: 'Lora';
   padding: 80px 40px;
 }
 
@@ -448,6 +448,7 @@ copyright {
   .submit-btn-container button{ padding: 9px 18px; font-size: 14px; }
   .required-info{ font-size: 12px; left: 16px; bottom: 12px; }
 }
+
 
 
 
