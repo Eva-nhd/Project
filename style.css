@@ -86,7 +86,7 @@
 
 /* ======== EXPOSITION ======== */
 .exposition h2 {
-  text-align: center;
+  text-align: left;
   font-size: 28px;
   margin-bottom: 20px;
 }
@@ -94,43 +94,62 @@
   width: 80%;
   height: 1px;
   background-color: #5c4033;
-  margin: 0 auto 60px;
+  margin: 0 auto 40px;
 }
-.images-haut, .images-bas {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  flex-wrap: wrap;
+.exposition {
+  width: 1180px;               
+  margin: 0 auto;              
 }
-.images-haut img, .images-bas img {
-  width: 320px;
-  height: 240px;
+
+/* --- STRUCTURE 3 COLONNES --- */
+.exposition .images-haut,
+.exposition .images-bas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 50px;            
+  margin-bottom: 40px;        
+}
+
+.exposition .images-haut img,
+.exposition .images-bas img {
+  width: 100%;
+  height: 210px;              
   object-fit: cover;
+  display: block;
   border-radius: 4px;
 }
-.text-row {
-  display: flex;
-  justify-content: center;
-  gap: 48px;
+
+.exposition .image-line {
+  height: 1px;
+  background: rgba(0,0,0,0.18);
+  width: 100%;
+  margin: 40px 0 44px 0;
+}
+
+.exposition .text-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 80px;          
+  margin-bottom: 60px;
   list-style: none;
-  padding: 80px 64px;
+  padding: 0;
+}
+
+.exposition .text-row li {
+  text-align: left;           
+  width: 100%;
+}
+
+.exposition .text-row h5 {
+  font-size: 20px;
+  margin: 0 0 8px 0;
+}
+
+.exposition .text-row p {
+  font-size: 15px;
+  color: rgba(92, 64, 51, 0.7);
+  line-height: 1.55;
   margin: 0;
-  flex-wrap: wrap;
-}
-.text-row li {
-  flex: 1;
-  min-width: 300px;
-  border-top: 1px solid rgba(0, 0, 0, 0.15);
-  padding-top: 24px;
-}
-.text-row h5 {
-  font-size: 22px;
-  margin-bottom: 10px;
-}
-.text-row p {
-  font-size: 16px;
-  color: rgba(92, 64, 51, 0.55);
-  line-height: 1.5;
 }
 
 /* ======== ÉVÉNEMENTS ======== */
@@ -431,6 +450,7 @@ copyright {
   .submit-btn-container button{ padding: 9px 18px; font-size: 14px; }
   .required-info{ font-size: 12px; left: 16px; bottom: 12px; }
 }
+
 
 
 
