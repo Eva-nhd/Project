@@ -170,7 +170,6 @@
 
 /* ======== CONTACTS ======== */
 .contacts-page {
-  background-color: #5c4033;
   color: #fff8e7;
   position: relative;
   text-align: center;
@@ -223,7 +222,7 @@
 .formulaire-section {
     width: 100%;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 0;
 }
 
 .form-title {
@@ -393,6 +392,7 @@
   .submit-btn-container button{ padding: 9px 18px; font-size: 14px; }
   .required-info{ font-size: 12px; left: 16px; bottom: 12px; }
 }
+
 
 
 
