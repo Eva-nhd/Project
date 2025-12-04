@@ -1,17 +1,15 @@
-/* ======== RESET ======== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
 /* ======== STYLE GLOBAL ======== */
-  body {
-    font-family: 'Lora', serif;
-    background-color: #fff8e7;
-    color: #5c4033;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-  }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lora', serif;
+  background-color: #fff8e7;
+  color: #5c4033;
+  scroll-behavior: smooth;
+}
+.section {
+  padding: 120px 0;
+}
 
 /* ======== MENU ======== */
 .menu {
@@ -450,6 +448,7 @@ copyright {
   .submit-btn-container button{ padding: 9px 18px; font-size: 14px; }
   .required-info{ font-size: 12px; left: 16px; bottom: 12px; }
 }
+
 
 
 
