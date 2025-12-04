@@ -1,17 +1,17 @@
+/* ======== RESET ======== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 /* ======== STYLE GLOBAL ======== */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Lora', serif;
-  background-color: #fff8e7;
-  color: #5c4033;
-  scroll-behavior: smooth;
-   overflow-x: hidden;
-  box-sizing: border-box;
-}
-.section {
-  padding: 60px 0;
-}
+  body {
+    font-family: 'Lora', serif;
+    background-color: #fff8e7;
+    color: #5c4033;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
 
 /* ======== MENU ======== */
 .menu {
@@ -27,10 +27,8 @@ body {
   padding: 0 35px;
   z-index: 1000;
 }
-.menu-logo {
-  width: auto;
-  height: 90%;
-}
+ .menu-logo { height: 90%; width: auto; }
+
 .menu-nav {
   display: flex;
   gap: 24px;
@@ -46,41 +44,32 @@ body {
 }
 
 
-/* ===== HAMBURGER ===== */
-.menu-toggle {
-  display: none; 
-}
+ /* ======== HAMBURGER ======== */
+  .menu-toggle { display: none; }
+  
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 22px;
+    cursor: pointer;
+    margin-left: auto;
+  }
+  
+  .hamburger span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background: #fff8e7;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
 
-.hamburger {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 30px;
-  height: 22px;
-  cursor: pointer;
-  margin-left: auto; /* pousse l'icône à droite */
-}
-
-.hamburger span {
-  display: block;
-  width: 28px;
-  height: 3px;
-  background: #fff8e7;
-  border-radius: 2px;
-  transition: 0.3s;
-}
-
-/* ======== ACCUEIL ======== */
-.accueil {
-  margin-top: 100px;
-  position: relative;
-}
-
-.image-accueil {
-  width: 100%;
-  height: auto;
-  display: block;
-}
+  /* ======== SECTIONS ======== */
+  .section { padding: 60px 0; }
+  .accueil { margin-top: 100px; position: relative; }
+  .image-accueil { width: 100%; height: auto; display: block; }
 
 /* ======== EXPOSITION ======== */
 .exposition h2 {
@@ -391,6 +380,7 @@ body {
   .submit-btn-container button{ padding: 9px 18px; font-size: 14px; }
   .required-info{ font-size: 12px; left: 16px; bottom: 12px; }
 }
+
 
 
 
