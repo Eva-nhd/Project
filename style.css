@@ -407,9 +407,6 @@ copyright {
   .menu-toggle:checked + .hamburger span:nth-child(3) {
     transform: rotate(-45deg) translate(6px, -7px);
   }
-}
-
-
 {
   .contact-form{
     grid-template-columns: 1fr;
@@ -434,6 +431,7 @@ copyright {
   .submit-btn-container button{ padding: 9px 18px; font-size: 14px; }
   .required-info{ font-size: 12px; left: 16px; bottom: 12px; }
 }
+
 
 
 
