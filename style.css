@@ -18,7 +18,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  height: 80px;
+  height: 100px;
   background-color: #5c4033;
   color: #fff8e7;
   display: flex;
@@ -27,7 +27,10 @@
   padding: 0 35px;
   z-index: 1000;
 }
- .menu-logo { height: 90%; width: auto; }
+ .menu-logo { 
+     margin-top: 70px;
+     height: 170%; 
+     width: auto; }
 
 .menu-nav {
   display: flex;
@@ -380,6 +383,7 @@
   .submit-btn-container button{ padding: 9px 18px; font-size: 14px; }
   .required-info{ font-size: 12px; left: 16px; bottom: 12px; }
 }
+
 
 
 
