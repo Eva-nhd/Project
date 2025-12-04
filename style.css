@@ -321,7 +321,7 @@
 }
 
 /* ============= RESPONSIVE ============= */
-@media (max-width: 980px)
+@media (max-width: 980px){
   .menu-nav {
     display: none;
     position: fixed; 
@@ -380,6 +380,7 @@
   .submit-btn-container button{ padding: 9px 18px; font-size: 14px; }
   .required-info{ font-size: 12px; left: 16px; bottom: 12px; }
 }
+
 
 
 
