@@ -310,9 +310,15 @@ line-height: 1.5;
 }
 
 .footer-left,
-.footer-center,
 .footer-right {
     text-align: left;
+}
+
+.footer-center {
+  width: 30%;
+  display: flex; /* Active Flexbox */
+  flex-direction: column; /* Empile les éléments verticalement (h3, puis logo) */
+  align-items: center; /* CENTRE TOUS LES ÉLÉMENTS enfants HORIZONTALEMENT */
 }
 
 .footer-left {
@@ -570,6 +576,7 @@ line-height: 1.5;
   .text-row:nth-of-type(2) li:nth-child(3) { order: 14; } /* Texte 6 */
 }
   
+
 
 
 
