@@ -86,52 +86,52 @@
 
 /* ======== EXPOSITION ======== */
 .exposition h2 {
-  text-align: left;
-  font-size: 28px;
-  margin-bottom: 40px;
-  padding-left: 10%;
+text-align: left;
+font-size: 28px;
+margin-bottom: 40px;
+padding-left: 10%;
 }
 .ligne-separation {
-  width: 80%;
-  height: 1px;
-  background-color: #5c4033;
-  margin: 0 auto 60px;
+width: 80%;
+height: 1px;
+background-color: #5c4033;
+margin: 0 auto 10px;
 }
 .images-haut, .images-bas {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  flex-wrap: wrap;
+display: flex;
+justify-content: center;
+gap: 50px;
+flex-wrap: wrap;
 }
 .images-haut img, .images-bas img {
-  width: 320px;
-  height: 240px;
-  object-fit: cover;
-  border-radius: 4px;
+width: 360px;
+height: 240px;
+object-fit: cover;
+border-radius: 4px;
 }
 .text-row {
-  display: flex;
-  justify-content: center;
-  gap: 48px;
-  list-style: none;
-  padding: 80px 64px;
-  margin: 0;
-  flex-wrap: wrap;
+display: flex;
+justify-content: center;
+gap: 48px;
+list-style: none;
+padding: 80px 64px;
+margin: 0;
+flex-wrap: wrap;
 }
 .text-row li {
-  flex: 1;
-  min-width: 300px;
-  border-top: 1px solid rgba(0, 0, 0, 0.15);
-  padding-top: 24px;
+flex: 1;
+min-width: 300px;
+border-top: 1px solid rgba(0, 0, 0, 0.15);
+padding-top: 24px;
 }
 .text-row h5 {
-  font-size: 22px;
-  margin-bottom: 10px;
+font-size: 22px;
+margin-bottom: 10px;
 }
 .text-row p {
-  font-size: 16px;
-  color: rgba(92, 64, 51, 0.55);
-  line-height: 1.5;
+font-size: 16px;
+color: rgba(92, 64, 51, 0.55);
+line-height: 1.5;
 }
 
 /* ======== ÉVÉNEMENTS ======== */
@@ -479,7 +479,99 @@
     padding: 30px 20px;
   }
 }
+@media (max-width: 1200px) {
+  .exposition h2 {
+      font-size: 24px;
+      margin-bottom: 30px;
+      padding-left: 5%; /* Réduire le padding sur les côtés */
+  }
+
+  .ligne-separation {
+      width: 90%;
+  }
+
+  .images-haut, .images-bas {
+      gap: 20px; /* Réduire l'espace entre les images */
+  }
+
+  .images-haut img, .images-bas img {
+      width: 300px; /* Réduire légèrement la taille des images */
+      height: 200px;
+  }
+
+  .text-row {
+      gap: 32px;
+      padding: 60px 32px;
+  }
+
+  .text-row li {
+      min-width: 250px;
+  }
+
+  .text-row h5 {
+      font-size: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  /* Rendre le conteneur parent (section exposition) flexible et vertical */
+  .exposition {
+      display: flex;
+      flex-direction: column;
+  }
+
+  /* Le titre et la séparation */
+  .exposition h2 { text-align: center; padding-left: 0; order: 2; }
+  .ligne-separation { width: 90%; order: 1; }
+
+  /* Masquer les conteneurs desktop pour ne gérer que les enfants */
+  .images-haut, .images-bas, .text-row {
+      display: contents; 
+  }
+
+  /* Styles généraux pour les images et les blocs de texte */
+  .images-haut div, .images-bas div {
+      width: 90%; 
+      margin: 0 auto 20px auto; 
+  }
+  .images-haut img, .images-bas img {
+      width: 100%;
+      height: auto;
+  }
+  .text-row li {
+      width: 90%; 
+      padding: 20px 5%;
+      margin: 0 auto 30px auto;
+      border-top: none;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.15); 
+  }
+
+  /* L'ORDRE ESSENTIEL pour l'alternance Image / Texte */
+  
+  /* PREMIER GROUPE */
+  .images-haut div:nth-child(1) { order: 3; } /* Image 1 */
+  .text-row:nth-of-type(1) li:nth-child(1) { order: 4; } /* Texte 1 */
+
+  .images-haut div:nth-child(2) { order: 5; } /* Image 2 */
+  .text-row:nth-of-type(1) li:nth-child(2) { order: 6; } /* Texte 2 */
+
+  .images-haut div:nth-child(3) { order: 7; } /* Image 3 */
+  .text-row:nth-of-type(1) li:nth-child(3) { order: 8; } /* Texte 3 */
+
+
+  /* DEUXIÈME GROUPE */
+  .images-bas div:nth-child(1) { order: 9; } /* Image 4 */
+  .text-row:nth-of-type(2) li:nth-child(1) { order: 10; } /* Texte 4 */
+
+  .images-bas div:nth-child(2) { order: 11; } /* Image 5 */
+  .text-row:nth-of-type(2) li:nth-child(2) { order: 12; } /* Texte 5 */
+
+  .images-bas div:nth-child(3) { order: 13; } /* Image 6 */
+  .text-row:nth-of-type(2) li:nth-child(3) { order: 14; } /* Texte 6 */
+}
   </style>
 </head>
+
 
 
