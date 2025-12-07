@@ -13,6 +13,18 @@
     overflow-x: hidden;
   }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* ======== MENU ======== */
 .menu {
   position: fixed;
@@ -570,6 +582,7 @@ line-height: 1.5;
   .text-row:nth-of-type(2) li:nth-child(3) { order: 14; } /* Texte 6 */
 }
   
+
 
 
 
