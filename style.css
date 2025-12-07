@@ -345,6 +345,7 @@
     align-items: center;
     font-size: 32px;
     font-weight: normal;
+     margin-bottom: 25px;
 }
 
 .footer-center p {
@@ -479,3 +480,4 @@
 }
   </style>
 </head>
+
