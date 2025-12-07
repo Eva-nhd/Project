@@ -218,7 +218,7 @@
   --label-w: 160px;    
   --max-form-w: 820px;
   --page-padding: 28px;
-  --font: "Georgia", serif;
+  --font: "Lora", serif;
 }
 /* ======== SECTION FORMULAIRE ======== */
 .formulaire-section {
@@ -306,6 +306,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
     align-items: start;
+    font-family: 'Lora', serif;
 }
 
 .footer-left,
@@ -344,7 +345,7 @@
     justify-content: center;
     align-items: center;
     font-size: 32px;
-    font-weight: normal;
+    font-weight: Lora;
      margin-bottom: 25px;
 }
 
@@ -480,4 +481,5 @@
 }
   </style>
 </head>
+
 
